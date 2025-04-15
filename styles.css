@@ -1,51 +1,8 @@
-/* Base page styling */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fffaf5;
-  color: #2f2f2f;
-  margin: 0;
-  padding: 0;
+:root {
+    --background-color: #fbfaff;
+    --text-color: #2d2b38;
+    --accent-color: #8a7fb0;
+    --secondary-accent: #ece8fa;
+    --link-color: #6c63a5;
+    --link-hover-color: #4a4378;
 }
-
-/* Header */
-.navbar, header {
-  background-color: #e8e6e1;
-  color: #2f2f2f;
-  border-bottom: 1px solid #d0cfcf;
-}
-
-.navbar a {
-  color: #3a3a3a;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 12px;
-}
-
-.navbar a:hover {
-  color: #8b5c7e;
-}
-
-/* Title */
-h1, h2, h3 {
-  color: #4a4a4a;
-}
-
-/* Emphasis text */
-strong {
-  color: #8b5c7e;
-}
-
-/* Lists */
-ul {
-  padding-left: 20px;
-}
-
-/* Footer if you want one */
-footer {
-  background-color: #e8e6e1;
-  color: #555;
-  text-align: center;
-  padding: 12px;
-  font-size: 0.9em;
-}
-/* css styles */
