@@ -18,5 +18,7 @@ format:
   html:
     theme: none
     css: styles.css
-output-dir: .
+
+
+output-dir: docs
 
