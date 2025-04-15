@@ -1,8 +1,46 @@
 :root {
-    --background-color: #fbfaff;
-    --text-color: #2d2b38;
-    --accent-color: #8a7fb0;
-    --secondary-accent: #ece8fa;
-    --link-color: #6c63a5;
-    --link-hover-color: #4a4378;
+  --background-color: #fbfaff;
+  --text-color: #2d2b38;
+  --accent-color: #8a7fb0;
+  --secondary-accent: #ece8fa;
+  --link-color: #6c63a5;
+  --link-hover-color: #4a4378;
 }
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.navbar {
+  background-color: var(--secondary-accent);
+}
+
+.quarto-title-banner {
+  background-color: var(--accent-color);
+  padding: 2rem 0;
+}
+
+.quarto-title {
+  color: var(--text-color);
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display&display=swap')
