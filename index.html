@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidhi A. Sharma - Portfolio</title>
     <style>
+        /* Muted rose/pink and warm gray color palette */
+        :root {
+            --background-color: #f9f6f7;
+            --text-color: #4a4a4a;
+            --heading-color: #5d4954;
+            --primary-color: #d8b4b9;
+            --secondary-color: #e6d7d9;
+            --accent-color: #b6808c;
+            --link-color: #a37785;
+            --link-hover-color: #7d5a62;
+            --nav-background: #e9dfe0;
+            --footer-background: #e9dfe0;
+        }
+        
         /* Base layout */
         body {
-            background-color: #fff8f5;
-            color: #2e2e2e;
+            background-color: var(--background-color);
+            color: var(--text-color);
             font-family: 'Georgia', 'Segoe UI', serif;
             line-height: 1.7;
             padding: 0;
@@ -16,48 +30,48 @@
         }
 
         header {
-            background-color: #f4e6f2;
+            background-color: var(--primary-color);
             padding: 3rem 1rem;
             text-align: center;
-            border-bottom: 1px solid #d4c2cb;
+            border-bottom: 1px solid var(--secondary-color);
         }
 
         nav {
-            background-color: #f4e6f2;
+            background-color: var(--nav-background);
             display: flex;
             justify-content: center;
             padding: 1rem;
-            border-bottom: 1px solid #d4c2cb;
+            border-bottom: 1px solid var(--secondary-color);
         }
 
         nav a {
-            color: #4a3c4c;
+            color: var(--heading-color);
             padding: 0 1.5rem;
             text-decoration: none;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #85586F;
+            color: var(--link-hover-color);
             text-decoration: underline;
         }
 
         /* Headings */
-        h1, h2, h3 {
-            color: #4a3c4c;
+        h1, h2, h3, h4 {
+            color: var(--heading-color);
             font-weight: 600;
             letter-spacing: 0.5px;
         }
 
         /* Links */
         a {
-            color: #b185a7;
+            color: var(--link-color);
             text-decoration: none;
             font-weight: 500;
         }
 
         a:hover {
-            color: #85586F;
+            color: var(--link-hover-color);
             text-decoration: underline;
         }
 
@@ -72,27 +86,59 @@
         section {
             margin-top: 2rem;
             padding-bottom: 2rem;
-            border-bottom: 1px solid #ecd6db;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        /* Skills section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .skill-category {
+            flex: 1 1 45%;
+            min-width: 250px;
+        }
+        
+        .skill-category h4 {
+            margin-bottom: 0.5rem;
+            color: var(--heading-color);
         }
 
         /* Project styling */
         .project {
             margin-bottom: 2rem;
             padding-bottom: 1rem;
-            border-bottom: 1px solid #ecd6db;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            color: #9a7f93;
-            text-align: center;
-            background-color: #f4e6f2;
-            border-top: 1px solid #d4c2cb;
+            border-bottom: 1px solid var(--secondary-color);
         }
         
+        .project h3 {
+            color: var(--heading-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .project p {
+            margin-top: 0.5rem;
+        }
+
+        /* Experience section */
+        .experience {
+            margin-bottom: 2rem;
+        }
+        
+        .experience h4 {
+            margin-bottom: 0.25rem;
+        }
+        
+        .experience p {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+            color: var(--text-color);
+        }
+
         /* Contact info styling */
         .contact-info {
             list-style-type: none;
@@ -100,27 +146,25 @@
         }
         
         .contact-info li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
-        
-        /* Skills styling */
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .skill-category {
-            flex: 1 1 45%;
-            min-width: 250px;
+
+        /* Footer */
+        footer {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            text-align: center;
+            background-color: var(--footer-background);
+            border-top: 1px solid var(--secondary-color);
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Vidhi A. Sharma</h1>
-        <p> Business Analytics Student and Professional</p>
+        <p>Business Analytics Student and Professional</p>
     </header>
     
     <nav>
@@ -188,7 +232,7 @@
             <h3>Professional Experience</h3>
             <div class="experience">
                 <h4>Business Analyst | Maharaj Multi-Systems</h4>
-                <p><em>January 2024 - July 2024</em></p>
+                <p>January 2024 - July 2024</p>
                 <ul>
                     <li>Improved workflow efficiency by 15% through operational data analysis, enhancing decision-making</li>
                     <li>Streamlined data verification, reducing processing errors by 25% and improving data accuracy on CRMs like Salesforce and HubSpot</li>
@@ -198,7 +242,7 @@
             
             <div class="experience">
                 <h4>Data Intern | Pimpri Chinchwad Media Communication</h4>
-                <p><em>August 2022 - August 2023</em></p>
+                <p>August 2022 - August 2023</p>
                 <ul>
                     <li>Reduced resolution times by 20% through efficient troubleshooting and system diagnostics</li>
                     <li>Assisted in deployment cycles, contributing to end-to-end project management, electronics integration, and database management</li>
