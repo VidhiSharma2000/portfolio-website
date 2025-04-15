@@ -14,10 +14,11 @@ website:
       - text: Contact
         href: contact.qmd
 
-format:
+    format:
   html:
-    theme: none
+    theme: default
     css: styles.css
+
 
 output-dir: docs
 
