@@ -1,24 +1,25 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "Vidhi A. Sharma"
   navbar:
     left:
-      - text: About
-        href: about.qmd
-      - text: Projects
-        href: projects.qmd
-      - text: CV
-        href: cv.qmd
-      - text: Contact
-        href: contact.qmd
+      - href: index.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+      - href: experience.qmd
+        text: Experience
+      - href: contact.qmd
+        text: Contact
 
-    format:
+format:
   html:
     theme: default
     css: styles.css
-
+    toc: true
 
 output-dir: docs
 
