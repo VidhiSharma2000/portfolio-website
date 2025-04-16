@@ -15,6 +15,12 @@
             --border-color: #e2e2e2;
             --heading-font: 'Playfair Display', serif;
             --body-font: 'Inter', sans-serif;
+            
+            /* New accent colors */
+            --accent-blue: #657b9d;
+            --accent-green: #7ba69a;
+            --accent-rose: #c68b7d;
+            --accent-gold: #d6b681;
         }
         
         * {
@@ -129,8 +135,19 @@
             color: var(--accent-color);
         }
         
+        /* About section with new styles */
+        #about {
+            background: linear-gradient(to bottom, #fff, #f9f6f3);
+        }
+        
         .about-content {
             max-width: 800px;
+        }
+        
+        .about-content p {
+            border-left: 4px solid var(--accent-rose);
+            padding-left: 15px;
+            margin-bottom: 30px;
         }
         
         .skills-grid {
@@ -153,13 +170,46 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
         
+        /* Colored skill cards */
+        .skill-card:nth-child(1) {
+            border-top: 4px solid var(--accent-blue);
+        }
+        
+        .skill-card:nth-child(2) {
+            border-top: 4px solid var(--accent-green);
+        }
+        
+        .skill-card:nth-child(3) {
+            border-top: 4px solid var(--accent-rose);
+        }
+        
+        .skill-card:nth-child(4) {
+            border-top: 4px solid var(--accent-gold);
+        }
+        
         .skill-title {
             font-family: var(--heading-font);
-            color: var(--accent-color);
             font-size: 1.3rem;
             margin-bottom: 1rem;
             position: relative;
             padding-bottom: 0.5rem;
+        }
+        
+        /* Colored skill titles */
+        .skill-card:nth-child(1) .skill-title {
+            color: var(--accent-blue);
+        }
+        
+        .skill-card:nth-child(2) .skill-title {
+            color: var(--accent-green);
+        }
+        
+        .skill-card:nth-child(3) .skill-title {
+            color: var(--accent-rose);
+        }
+        
+        .skill-card:nth-child(4) .skill-title {
+            color: var(--accent-gold);
         }
         
         .skill-title:after {
@@ -169,7 +219,7 @@
             bottom: 0;
             width: 30px;
             height: 2px;
-            background-color: var(--secondary-color);
+            background-color: currentColor;
         }
         
         .projects-grid {
