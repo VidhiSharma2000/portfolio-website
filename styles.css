@@ -8,14 +8,17 @@
     --heading-font: 'Playfair Display', serif;
     --body-font: 'Inter', sans-serif;
     
+    /* Navigation background color */
+    --nav-bg-color: #a8c1b4;  /* Green background for navigation */
+    
+    /* Navigation text color */
+    --nav-accent-color: #a2918c;  /* Lighter brown for navigation text */
+    
     /* New accent colors */
     --accent-blue: #657b9d;
     --accent-green: #7ba69a;
     --accent-rose: #c68b7d;
     --accent-gold: #d6b681;
-    
-    /* New lighter accent color for navigation */
-    --nav-accent-color: #a2918c;
 }
 
 * {
@@ -68,7 +71,7 @@ h1 {
 
 nav {
     padding: 1.2rem 0;
-    background-color: white;
+    background-color: var(--nav-bg-color);  /* Green background */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -87,7 +90,7 @@ nav {
 
 .nav-items a {
     text-decoration: none;
-    color: var(--nav-accent-color);
+    color: var(--nav-accent-color);  /* Lighter brown text */
     font-weight: 500;
     font-size: 1rem;
     transition: color 0.2s;
