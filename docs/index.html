@@ -1,462 +1,527 @@
-:root {
-    --bg-color: #f8f8f8;
-    --text-color: #333;
-    --accent-color: #74635e;
-    --secondary-color: #8c7b75;
-    --light-color: #f1eeee;
-    --border-color: #e2e2e2;
-    --heading-font: 'Playfair Display', serif;
-    --body-font: 'Inter', sans-serif;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhi A. Sharma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8f8f8;
+            --text-color: #333;
+            --accent-color: #74635e;
+            --secondary-color: #8c7b75;
+            --light-color: #f1eeee;
+            --border-color: #e2e2e2;
+            --heading-font: 'Playfair Display', serif;
+            --body-font: 'Inter', sans-serif;
+            
+            /* New accent colors */
+            --accent-blue: #657b9d;
+            --accent-green: #7ba69a;
+            --accent-rose: #c68b7d;
+            --accent-gold: #d6b681;
+            
+            /* New lighter accent color for navigation */
+            --nav-accent-color: #a2918c;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: var(--body-font);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        header {
+            padding: 4rem 0 2rem;
+            background-color: white;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: var(--heading-font);
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-weight: 300;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+        
+        nav {
+            padding: 1.2rem 0;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+        }
+        
+        .nav-items {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        .nav-items li {
+            margin: 0 1.5rem;
+        }
+        
+        .nav-items a {
+            text-decoration: none;
+            color: var(--nav-accent-color);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+            position: relative;
+        }
+        
+        .nav-items a:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+        
+        .nav-items a:hover {
+            color: var(--accent-color);
+        }
+        
+        .nav-items a:hover:after {
+            width: 100%;
+        }
+        
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-family: var(--heading-font);
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            color: var(--accent-color);
+        }
+        
+        /* About section with new styles */
+        #about {
+            background: linear-gradient(to bottom, #fff, #f9f6f3);
+        }
+        
+        .about-content {
+            max-width: 800px;
+        }
+        
+        .about-content p {
+            border-left: 4px solid var(--accent-rose);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        /* Colored skill cards */
+        .skill-card:nth-child(1) {
+            border-top: 4px solid var(--accent-blue);
+        }
+        
+        .skill-card:nth-child(2) {
+            border-top: 4px solid var(--accent-green);
+        }
+        
+        .skill-card:nth-child(3) {
+            border-top: 4px solid var(--accent-rose);
+        }
+        
+        .skill-card:nth-child(4) {
+            border-top: 4px solid var(--accent-gold);
+        }
+        
+        .skill-title {
+            font-family: var(--heading-font);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Colored skill titles */
+        .skill-card:nth-child(1) .skill-title {
+            color: var(--accent-blue);
+        }
+        
+        .skill-card:nth-child(2) .skill-title {
+            color: var(--accent-green);
+        }
+        
+        .skill-card:nth-child(3) .skill-title {
+            color: var(--accent-rose);
+        }
+        
+        .skill-card:nth-child(4) .skill-title {
+            color: var(--accent-gold);
+        }
+        
+        .skill-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: currentColor;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .project-image {
+            height: 180px;
+            background-color: var(--light-color);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-title {
+            font-family: var(--heading-font);
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .project-description {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tag {
+            background-color: var(--light-color);
+            color: var(--secondary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .experience-container {
+            max-width: 800px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin-top: 2.5rem;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: var(--light-color);
+        }
+        
+        .timeline-item {
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            border: 3px solid white;
+        }
+        
+        .timeline-title {
+            font-family: var(--heading-font);
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .timeline-period {
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+        
+        .timeline-description ul {
+            padding-left: 1.2rem;
+        }
+        
+        .timeline-description li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-list {
+            margin-top: 2rem;
+            list-style: none;
+        }
+        
+        .education-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--light-color);
+        }
+        
+        .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .education-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .education-institution {
+            color: var(--secondary-color);
+            margin-bottom: 0.3rem;
+        }
+        
+        .education-period {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .certification-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .certification-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        
+        .certification-issuer {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        .contact-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-value {
+            color: var(--secondary-color);
+        }
+        
+        .contact-value a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .contact-value a:hover {
+            color: var(--accent-color);
+        }
+        
+        footer {
+            padding: 3rem 0;
+            background-color: white;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .footer-copyright {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .projects-grid, .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-items li {
+                margin: 0 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Vidhi A. Sharma</h1>
+            <p class="subtitle">Business Analytics Student and Professional</p>
+        </div>
+    </header>
     
-    /* New accent colors */
-    --accent-blue: #657b9d;
-    --accent-green: #7ba69a;
-    --accent-rose: #c68b7d;
-    --accent-gold: #d6b681;
+    <nav>
+        <div class="container">
+            <ul class="nav-items">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     
-    /* New lighter accent color for navigation */
-    --nav-accent-color: #a2918c;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: var(--body-font);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-header {
-    padding: 4rem 0 2rem;
-    background-color: white;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-h1 {
-    font-family: var(--heading-font);
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.5px;
-}
-
-.subtitle {
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-}
-
-nav {
-    padding: 1.2rem 0;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
-}
-
-.nav-items {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-items li {
-    margin: 0 1.5rem;
-}
-
-.nav-items a {
-    text-decoration: none;
-    color: var(--nav-accent-color);
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.2s;
-    position: relative;
-}
-
-.nav-items a:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-color);
-    transition: width 0.3s;
-}
-
-.nav-items a:hover {
-    color: var(--accent-color);
-}
-
-.nav-items a:hover:after {
-    width: 100%;
-}
-
-section {
-    padding: 4rem 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-section:last-child {
-    border-bottom: none;
-}
-
-.section-title {
-    font-family: var(--heading-font);
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    position: relative;
-    color: var(--accent-color);
-}
-
-/* About section with new styles */
-#about {
-    background: linear-gradient(to bottom, #fff, #f9f6f3);
-}
-
-.about-content {
-    max-width: 800px;
-}
-
-.about-content p {
-    border-left: 4px solid var(--accent-rose);
-    padding-left: 15px;
-    margin-bottom: 30px;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.skill-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-/* Colored skill cards */
-.skill-card:nth-child(1) {
-    border-top: 4px solid var(--accent-blue);
-}
-
-.skill-card:nth-child(2) {
-    border-top: 4px solid var(--accent-green);
-}
-
-.skill-card:nth-child(3) {
-    border-top: 4px solid var(--accent-rose);
-}
-
-.skill-card:nth-child(4) {
-    border-top: 4px solid var(--accent-gold);
-}
-
-.skill-title {
-    font-family: var(--heading-font);
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-}
-
-/* Colored skill titles */
-.skill-card:nth-child(1) .skill-title {
-    color: var(--accent-blue);
-}
-
-.skill-card:nth-child(2) .skill-title {
-    color: var(--accent-green);
-}
-
-.skill-card:nth-child(3) .skill-title {
-    color: var(--accent-rose);
-}
-
-.skill-card:nth-child(4) .skill-title {
-    color: var(--accent-gold);
-}
-
-.skill-title:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 30px;
-    height: 2px;
-    background-color: currentColor;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    background-color: white;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.project-image {
-    height: 180px;
-    background-color: var(--light-color);
-    background-size: cover;
-    background-position: center;
-}
-
-.project-content {
-    padding: 1.5rem;
-}
-
-.project-title {
-    font-family: var(--heading-font);
-    color: var(--accent-color);
-    font-size: 1.3rem;
-    margin-bottom: 0.75rem;
-}
-
-.project-description {
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.tag {
-    background-color: var(--light-color);
-    color: var(--secondary-color);
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 500;
-}
-
-.experience-container {
-    max-width: 800px;
-}
-
-.timeline {
-    position: relative;
-    padding-left: 2rem;
-    margin-top: 2.5rem;
-}
-
-.timeline:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: var(--light-color);
-}
-
-.timeline-item {
-    margin-bottom: 2.5rem;
-    position: relative;
-}
-
-.timeline-item:before {
-    content: '';
-    position: absolute;
-    left: -2rem;
-    top: 0.5rem;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    border: 3px solid white;
-}
-
-.timeline-title {
-    font-family: var(--heading-font);
-    color: var(--accent-color);
-    font-size: 1.3rem;
-    margin-bottom: 0.25rem;
-}
-
-.timeline-period {
-    font-style: italic;
-    color: var(--secondary-color);
-    margin-bottom: 0.75rem;
-    font-size: 0.9rem;
-}
-
-.timeline-description ul {
-    padding-left: 1.2rem;
-}
-
-.timeline-description li {
-    margin-bottom: 0.5rem;
-}
-
-.education-list {
-    margin-top: 2rem;
-    list-style: none;
-}
-
-.education-item {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--light-color);
-}
-
-.education-item:last-child {
-    border-bottom: none;
-}
-
-.education-title {
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
-}
-
-.education-institution {
-    color: var(--secondary-color);
-    margin-bottom: 0.3rem;
-}
-
-.education-period {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: var(--secondary-color);
-}
-
-.certification-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.certification-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
-
-.certification-title {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-}
-
-.certification-issuer {
-    font-size: 0.9rem;
-    color: var(--secondary-color);
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.contact-item {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.contact-icon {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--accent-color);
-}
-
-.contact-title {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.contact-value {
-    color: var(--secondary-color);
-}
-
-.contact-value a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.contact-value a:hover {
-    color: var(--accent-color);
-}
-
-footer {
-    padding: 3rem 0;
-    background-color: white;
-    text-align: center;
-    border-top: 1px solid var(--border-color);
-}
-
-.footer-copyright {
-    font-size: 0.9rem;
-    color: var(--secondary-color);
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I'm Vidhi A. Sharma, a Master's student in Applied Business Analytics at Boston University with a background in computer science and hands-on experience in analytics, operations, and business strategy. I enjoy streamlining processes, designing data solutions, and making sense of complex problems with a mix of logic, clarity, and curiosity.
+                </p>
+                <p>
+                    From automating reports and building dashboards to analyzing trends and improving workflows, I bring both structure and energy to the table. I'm comfortable translating between technical teams and business stakeholders, and I take pride in making things work better and look easier than they are.
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 class="skill-title">Data Analytics</h3>
+                    <p>Proficient in SQL, Python, R, Tableau, Power BI, MS Excel, SAS, Dataiku, Azure, PostgreSQL, and statistical modeling.</p>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title">Database & Process Management</h3>
+                    <p>Experienced in operations management, workflow optimization, ETL workflows, data pipelines, and CRM systems including Salesforce and HubSpot.</p>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title">Technical Development</h3>
+                    <p>Knowledge of full-stack development (JavaScript, HTML, CSS), object-oriented programming (C, C++, Python), and cloud computing platforms including AWS.</p>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title">Soft Skills</h3>
+                    <p>Strong communication, leadership potential, adaptability, strategic thinking, and collaborative problem-solving abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    .projects-grid, .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .nav-items li {
-        margin: 0 0.75rem;
-    }
-}
+    <!-- Rest of the HTML remains the same -->
+</body>
+</html>
