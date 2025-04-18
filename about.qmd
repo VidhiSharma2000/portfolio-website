@@ -2,39 +2,62 @@
 title: "About Me"
 image: images/profile.jpg
 about:
-  template: trestles
   image-width: 180px
   image-shape: rounded
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/vidhi-sharma
-    - icon: github
-      text: GitHub
-      href: https://github.com/vidhi-sharma
+  template: trestles
 ---
+
+::: {style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;"}
+
+![Vidhi A. Sharma](images/profile.jpg){width=180px style="border-radius: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"}
+
+<div>
 
 Hi, I'm **Vidhi A. Sharma** — a data-driven business analyst and current Master’s student in Applied Business Analytics at Boston University. With a background in Computer Science, I specialize in transforming complex data into clear, actionable strategies that help businesses work smarter.
 
-I translate data into stories — ones that drive decisions, boost efficiency, and uncover opportunities. Whether it's cleaning messy datasets, analyzing trends, or building dashboards that even your least tech-savvy manager can navigate, I focus on **making insights accessible**.
+</div>
+
+:::
+
+---
+
+## What I Do
+
+I translate data into stories — ones that drive decisions, boost efficiency, and uncover opportunity. Whether it's cleaning messy datasets, analyzing trends, or building dashboards that even your least tech-savvy manager can navigate, I focus on **making insights accessible**.
 
 My toolkit includes Python, SQL, Tableau, Power BI, and cloud tools like AWS and Azure. But what sets me apart is my ability to blend **technical depth** with **business clarity** — turning complex models into solutions that actually work in the real world.
 
 ---
 
-## Volunteering & Impact
+## Education
 
-- **Youth Empowerment Foundation**  
-  Mentored underprivileged students and assisted in educational drives aimed at bridging learning gaps.
-
-- **Help Social Welfare Society**  
-  Contributed to community development efforts through outreach, event organization, and social aid campaigns.
-
-- **Sahaas for Animals**  
-  Regular volunteer at a local animal shelter; supported daily care, cleanliness, adoption events, and fundraising initiatives.
+**Boston University**, Master of Science – Applied Business Analytics (2024 – Present)  
+**MIT World Peace University**, Bachelor of Science – Computer Science (2019 – 2022)  
 
 ---
 
-## Let's Collaborate
+## Experience
+
+**Maharaj Multi-Systems** – Analyst (Jan 2024 – Jul 2024)  
+- Boosted workflow efficiency by 15% via operational data analysis  
+- Reduced CRM processing errors by 25%, improving client retention by 30%  
+- Partnered cross-functionally to streamline and optimize resource use
+
+**PCMC (Pimpri Chinchwad Media Communication)** – Intern (Aug 2022 – Aug 2023)  
+- Reduced resolution times by 20% with system diagnostics and support  
+- Contributed to electronics integration and database deployments  
+- Improved client satisfaction through customer-focused troubleshooting
+
+---
+
+## Volunteering & Impact
+
+- **Youth Empowerment Foundation** – Mentored underprivileged students and supported education drives  
+- **Help Social Welfare Society** – Assisted with social programs and outreach  
+- **Sahaas for Animals** – Animal shelter volunteer: care, cleanups, and fundraising
+
+---
+
+## Let’s Collaborate
 
 Whether you're a business leader looking to understand your customers better, or a team struggling to make sense of your data — I can help. Let’s turn your questions into dashboards, and your hunches into measurable results.

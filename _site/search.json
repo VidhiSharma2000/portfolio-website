@@ -81,14 +81,35 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Hi, I’m Vidhi A. Sharma — a data-driven business analyst and current Master’s student in Applied Business Analytics at Boston University. With a background in Computer Science, I specialize in transforming complex data into clear, actionable strategies that help businesses work smarter.\nI translate data into stories — ones that drive decisions, boost efficiency, and uncover opportunities. Whether it’s cleaning messy datasets, analyzing trends, or building dashboards that even your least tech-savvy manager can navigate, I focus on making insights accessible.\nMy toolkit includes Python, SQL, Tableau, Power BI, and cloud tools like AWS and Azure. But what sets me apart is my ability to blend technical depth with business clarity — turning complex models into solutions that actually work in the real world."
+    "text": "Vidhi A. Sharma\n\n\n\nHi, I’m Vidhi A. Sharma — a data-driven business analyst and current Master’s student in Applied Business Analytics at Boston University. With a background in Computer Science, I specialize in transforming complex data into clear, actionable strategies that help businesses work smarter."
+  },
+  {
+    "objectID": "about.html#what-i-do",
+    "href": "about.html#what-i-do",
+    "title": "About Me",
+    "section": "What I Do",
+    "text": "What I Do\nI translate data into stories — ones that drive decisions, boost efficiency, and uncover opportunity. Whether it’s cleaning messy datasets, analyzing trends, or building dashboards that even your least tech-savvy manager can navigate, I focus on making insights accessible.\nMy toolkit includes Python, SQL, Tableau, Power BI, and cloud tools like AWS and Azure. But what sets me apart is my ability to blend technical depth with business clarity — turning complex models into solutions that actually work in the real world."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nBoston University, Master of Science – Applied Business Analytics (2024 – Present)\nMIT World Peace University, Bachelor of Science – Computer Science (2019 – 2022)"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\nMaharaj Multi-Systems – Analyst (Jan 2024 – Jul 2024)\n- Boosted workflow efficiency by 15% via operational data analysis\n- Reduced CRM processing errors by 25%, improving client retention by 30%\n- Partnered cross-functionally to streamline and optimize resource use\nPCMC (Pimpri Chinchwad Media Communication) – Intern (Aug 2022 – Aug 2023)\n- Reduced resolution times by 20% with system diagnostics and support\n- Contributed to electronics integration and database deployments\n- Improved client satisfaction through customer-focused troubleshooting"
   },
   {
     "objectID": "about.html#volunteering-impact",
     "href": "about.html#volunteering-impact",
     "title": "About Me",
     "section": "Volunteering & Impact",
-    "text": "Volunteering & Impact\n\nYouth Empowerment Foundation\nMentored underprivileged students and assisted in educational drives aimed at bridging learning gaps.\nHelp Social Welfare Society\nContributed to community development efforts through outreach, event organization, and social aid campaigns.\nSahaas for Animals\nRegular volunteer at a local animal shelter; supported daily care, cleanliness, adoption events, and fundraising initiatives."
+    "text": "Volunteering & Impact\n\nYouth Empowerment Foundation – Mentored underprivileged students and supported education drives\n\nHelp Social Welfare Society – Assisted with social programs and outreach\n\nSahaas for Animals – Animal shelter volunteer: care, cleanups, and fundraising"
   },
   {
     "objectID": "about.html#lets-collaborate",
