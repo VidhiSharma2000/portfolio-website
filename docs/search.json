@@ -2,9 +2,37 @@
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Vidhi A. Sharma",
+    "title": "Projects",
     "section": "",
-    "text": "/* Variables for consistent colors */ :root { –dark-grey: #333333; –medium-grey: #444444; –light-grey: #f5f5f5; –white: #ffffff; –teal: #4ecdc4; –coral: #ff6b6b; –navy: #1a535c; }\n/* Base styling */ body { font-family: ‘Raleway’, sans-serif; color: var(–dark-grey); line-height: 1.7; background-color: var(–light-grey); }\n/* Navbar styling */ .navbar { background-color: var(–medium-grey) !important; }\n.navbar-brand, .nav-link { color: var(–white) !important; }\n.nav-link:hover { color: var(–teal) !important; }\n/* Heading styles */ h1, h2, h3, h4, h5, h6 { color: var(–dark-grey); }\nh1 { font-size: 2.5em; border-bottom: 2px solid var(–teal); padding-bottom: 0.2em; }\nh2 { font-size: 2em; color: var(–medium-grey); }\n/* Link styling */ a { color: var(–teal); text-decoration: none; transition: color 0.2s ease; }\na:hover { color: var(–coral); text-decoration: underline; }\n/* Quote styling */ blockquote { border-left: 4px solid var(–teal); padding-left: 1em; color: var(–medium-grey); }\n/* Content blocks */ .content-block { padding: 2em; margin-bottom: 2em; background-color: var(–white); border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }\n/* Skills section styling */ .skills-container { display: flex; flex-wrap: wrap; gap: 1.5em; margin-top: 2em; }\n.skill-card { background-color: var(–white); border-radius: 5px; border-top: 4px solid var(–teal); padding: 1.5em; flex: 1 1 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.3s ease; }\n.skill-card:hover { transform: translateY(-5px); border-top: 4px solid var(–coral); }\n.skill-card h3 { color: var(–medium-grey); border-bottom: 1px solid var(–light-grey); padding-bottom: 0.5em; }\n/* Button styling */ .btn-primary { background-color: var(–teal); border-color: var(–teal); color: var(–white); }\n.btn-primary:hover { background-color: var(–navy); border-color: var(–navy); }\n/* Footer styling */ .footer, footer { background-color: var(–medium-grey); color: var(–white); padding: 2em 0; margin-top: 3em; }\n.footer a, footer a { color: var(–teal); }\n/* Project cards styling */ .project-card { background-color: var(–white); border-radius: 5px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 2em; transition: transform 0.3s ease; }\n.project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); }\n.project-card img { width: 100%; height: 200px; object-fit: cover; }\n.project-card-content { padding: 1.5em; }\n.project-card h3 { margin-top: 0; color: var(–medium-grey); }\n.project-technologies { display: flex; flex-wrap: wrap; margin-top: 1em; }\n/* Contact page styling */ .contact-info { background-color: var(–white); border-radius: 5px; padding: 2em; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 2em 0; }\n.contact-item { margin-bottom: 1rem; display: flex; align-items: center; }\n.contact-item i { margin-right: 1rem; color: var(–teal); font-size: 1.5rem; width: 2rem; text-align: center; }\n.contact-item span { font-weight: bold; margin-right: 0.5rem; width: 5rem; }\n/* Experience page styling */ .experience-item { background-color: var(–white); border-radius: 5px; padding: 1.5em; margin-bottom: 1.5em; box-shadow: 0 4px 8px rgba(0,0,0,0.05); position: relative; }\n.experience-item::before { content: ’’; position: absolute; left: -20px; top: 50%; width: 20px; height: 2px; background-color: var(–teal); }\n.experience-date { color: var(–teal); font-weight: bold; }\n.experience-position { font-size: 1.3em; font-weight: bold; margin: 0.5em 0; }\n.experience-company { color: var(–medium-grey); margin-bottom: 1em; }\n/* Additional elements */ .badge { background-color: var(–teal); color: var(–white); padding: 0.3em 0.6em; border-radius: 3px; font-size: 0.8em; margin: 0.2em; display: inline-block; }\n.badge-secondary { background-color: var(–coral); }\n.badge-tertiary { background-color: var(–navy); }\n/* Highlight text */ .highlight { color: var(–teal); font-weight: bold; }\n/* Table styling */ table { width: 100%; border-collapse: collapse; margin: 2em 0; background-color: var(–white); }\nth { background-color: var(–medium-grey); color: var(–white); padding: 0.75em; text-align: left; }\ntd { padding: 0.75em; border-bottom: 1px solid var(–light-grey); }\ntr:hover { background-color: rgba(78, 205, 196, 0.1); }\n/* Responsive design */ @media (max-width: 768px) { .about-me-container { flex-direction: column-reverse; }\n.skills-container { flex-direction: column; }\n.contact-item { flex-direction: column; align-items: flex-start; }\n.contact-item i { margin-bottom: 0.5rem; } }"
+    "text": "Led time series and regression analysis on residential real estate data to identify key sales trends and predictors."
+  },
+  {
+    "objectID": "projects.html#new-york-real-estate-analysis",
+    "href": "projects.html#new-york-real-estate-analysis",
+    "title": "Projects",
+    "section": "",
+    "text": "Led time series and regression analysis on residential real estate data to identify key sales trends and predictors."
+  },
+  {
+    "objectID": "projects.html#stickley-adhesives-operations-analysis-process-optimization-report",
+    "href": "projects.html#stickley-adhesives-operations-analysis-process-optimization-report",
+    "title": "Projects",
+    "section": "Stickley Adhesives Operations Analysis & Process Optimization Report",
+    "text": "Stickley Adhesives Operations Analysis & Process Optimization Report\nAnalyzed business processes and proposed workflow improvements in a managerial report for Operations Management."
+  },
+  {
+    "objectID": "projects.html#skincare-sales-data-analysis",
+    "href": "projects.html#skincare-sales-data-analysis",
+    "title": "Projects",
+    "section": "Skincare Sales Data Analysis",
+    "text": "Skincare Sales Data Analysis\nSelf-initiated project exploring consumer behavior, sales trends, and pricing strategy in the beauty industry, currently working on dashboard deployment."
+  },
+  {
+    "objectID": "projects.html#ai-vs-non-ai-job-growth-analysis",
+    "href": "projects.html#ai-vs-non-ai-job-growth-analysis",
+    "title": "Projects",
+    "section": "AI vs Non-AI Job Growth Analysis",
+    "text": "AI vs Non-AI Job Growth Analysis\nStudied employment trends across industries in 2024 and visualized insights in an AWS-deployed dashboard."
   },
   {
     "objectID": "experience.html",
@@ -51,9 +79,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this site"
+    "text": "Hi, I’m Vidhi A. Sharma — a data-driven business analyst and current Master’s student in Applied Business Analytics at Boston University. With a background in Computer Science, I specialize in transforming complex data into clear, actionable strategies that help businesses work smarter.\nI translate data into stories — ones that drive decisions, boost efficiency, and uncover opportunities. Whether it’s cleaning messy datasets, analyzing trends, or building dashboards that even your least tech-savvy manager can navigate, I focus on making insights accessible.\nMy toolkit includes Python, SQL, Tableau, Power BI, and cloud tools like AWS and Azure. But what sets me apart is my ability to blend technical depth with business clarity — turning complex models into solutions that actually work in the real world."
+  },
+  {
+    "objectID": "about.html#volunteering-impact",
+    "href": "about.html#volunteering-impact",
+    "title": "About Me",
+    "section": "Volunteering & Impact",
+    "text": "Volunteering & Impact\n\nYouth Empowerment Foundation\nMentored underprivileged students and assisted in educational drives aimed at bridging learning gaps.\nHelp Social Welfare Society\nContributed to community development efforts through outreach, event organization, and social aid campaigns.\nSahaas for Animals\nRegular volunteer at a local animal shelter; supported daily care, cleanliness, adoption events, and fundraising initiatives."
+  },
+  {
+    "objectID": "about.html#lets-collaborate",
+    "href": "about.html#lets-collaborate",
+    "title": "About Me",
+    "section": "Let’s Collaborate",
+    "text": "Let’s Collaborate\nWhether you’re a business leader looking to understand your customers better, or a team struggling to make sense of your data — I can help. Let’s turn your questions into dashboards, and your hunches into measurable results."
   },
   {
     "objectID": "contact.html",
@@ -88,6 +130,6 @@
     "href": "index.html",
     "title": "Vidhi A. Sharma",
     "section": "",
-    "text": "I’m Vidhi A. Sharma, a Master’s student in Applied Business Analytics at Boston University with a background in computer science and hands-on experience in analytics, operations, and business strategy. I enjoy streamlining processes, designing data solutions, and making sense of complex problems with a mix of logic, clarity, and curiosity.\nFrom automating reports and building dashboards to analyzing trends and improving workflows, I bring both structure and energy to the table. I’m comfortable translating between technical teams and business stakeholders, and I take pride in making things work better and look easier than they are.\n\n\n\n\n\n\n\nProficient in SQL, Python, R, and data visualization tools. Experience with statistical analysis, machine learning, and predictive modeling to extract actionable insights from complex datasets.\nSQL Python R Tableau\n\n\n\nSkilled in database design, ETL processes, and workflow optimization. Experience in streamlining business operations through data-driven approaches and process automation.\nETL Database Design Process Optimization\n\n\n\nKnowledge of full-stack development principles with experience in creating data-driven applications and dashboards. Comfortable with version control systems and agile methodologies.\nWeb Development Git Agile\n\n\n\n\n\n\nBoston University\nMaster of Science in Applied Business Analytics\n2023 - Present\nMumbai University\nBachelor of Engineering in Computer Science\n2018 - 2022\n\n\n\n\n\nData Analytics Intern | TechSolutions Inc.\nJune 2023 - August 2023\n\nAnalyzed customer data to identify patterns and trends that increased retention by 15%\nDeveloped automated reporting dashboards using Power BI that reduced reporting time by 60%\nCollaborated with cross-functional teams to implement data-driven solutions\n\nJunior Business Analyst | InnovateTech\nJanuary 2022 - May 2023\n\nPerformed data analysis to support business decision-making processes\nAssisted in designing and implementing database solutions for improved data management\nCreated regular reports and presentations for executive leadership\n\n\n\n\n“I believe in translating complex data into clear, actionable insights that drive business dec"
+    "text": "Driving Insightful Decisions through Data & Design\nHelping businesses turn analytics into action.\nExplore my Projects to see how I transform data into strategic insights."
   }
 ]
