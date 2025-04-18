@@ -127,25 +127,116 @@ blockquote {
   color: var(--teal);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .about-me-container {
-    flex-direction: column-reverse;
-  }
-  
-  .skills-container {
-    flex-direction: column;
-  }
+/* Project cards styling */
+.project-card {
+  background-color: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2em;
+  transition: transform 0.3s ease;
 }
 
-/* Additional accent elements */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card-content {
+  padding: 1.5em;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--medium-grey);
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+/* Contact page styling */
+.contact-info {
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 2em 0;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item i {
+  margin-right: 1rem;
+  color: var(--teal);
+  font-size: 1.5rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.contact-item span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  width: 5rem;
+}
+
+/* Experience page styling */
+.experience-item {
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: var(--teal);
+}
+
+.experience-date {
+  color: var(--teal);
+  font-weight: bold;
+}
+
+.experience-position {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.experience-company {
+  color: var(--medium-grey);
+  margin-bottom: 1em;
+}
+
+/* Additional elements */
 .badge {
   background-color: var(--teal);
   color: var(--white);
   padding: 0.3em 0.6em;
   border-radius: 3px;
   font-size: 0.8em;
-  margin-right: 0.5em;
+  margin: 0.2em;
+  display: inline-block;
 }
 
 .badge-secondary {
@@ -167,6 +258,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 2em 0;
+  background-color: var(--white);
 }
 
 th {
@@ -183,4 +275,24 @@ td {
 
 tr:hover {
   background-color: rgba(78, 205, 196, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column-reverse;
+  }
+  
+  .skills-container {
+    flex-direction: column;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-item i {
+    margin-bottom: 0.5rem;
+  }
 }

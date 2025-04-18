@@ -1,0 +1,68 @@
+---
+title: "Experience"
+---
+
+# Professional Experience
+
+## Work Experience
+
+### Data Analytics Intern
+**TechSolutions Inc.** | June 2023 - August 2023
+
+- Analyzed customer data to identify patterns and trends that increased retention by 15%
+- Developed automated reporting dashboards using Power BI that reduced reporting time by 60%
+- Collaborated with cross-functional teams to implement data-driven solutions
+- Presented findings and recommendations to executive leadership
+
+### Junior Business Analyst
+**InnovateTech** | January 2022 - May 2023
+
+- Performed data analysis to support business decision-making processes
+- Assisted in designing and implementing database solutions for improved data management
+- Created regular reports and presentations for executive leadership
+- Participated in process improvement initiatives that increased operational efficiency by 20%
+
+## Education
+
+### Boston University
+**Master of Science in Applied Business Analytics** | 2023 - Present
+
+Relevant Coursework:
+- Data Mining for Business Analytics
+- Predictive Analytics
+- Database Design and Implementation
+- Business Intelligence and Data Visualization
+
+### Mumbai University
+**Bachelor of Engineering in Computer Science** | 2018 - 2022
+
+Relevant Coursework:
+- Data Structures and Algorithms
+- Database Management Systems
+- Machine Learning
+- Software Engineering
+
+## Skills
+
+### Technical Skills
+- **Programming Languages**: Python, R, SQL, Java
+- **Data Analysis Tools**: Tableau, Power BI, Excel
+- **Machine Learning**: Regression, Classification, Clustering
+- **Database**: MySQL, PostgreSQL, MongoDB
+
+### Business Skills
+- Business Process Analysis
+- Requirements Gathering
+- Project Management
+- Data Visualization
+- Strategic Planning
+
+## Certifications
+
+- **Microsoft Certified: Data Analyst Associate** (2023)
+- **Google Data Analytics Professional Certificate** (2022)
+- **Tableau Desktop Specialist** (2022)
+
+## Download Resume
+
+<a href="files/Vidhi_Sharma_Resume.pdf" class="btn btn-primary" download>Download Full Resume (PDF)</a>

@@ -1,0 +1,67 @@
+---
+title: "Contact"
+---
+
+# Get in Touch
+
+I'm always open to discussing new opportunities, collaborations, or just connecting with fellow data enthusiasts. Feel free to reach out through any of the channels below.
+
+## Contact Information
+
+<div class="contact-info">
+  <div class="contact-item">
+    <i class="bi bi-envelope-fill"></i>
+    <span>Email:</span>
+    <a href="mailto:your.email@example.com">your.email@example.com</a>
+  </div>
+  
+  <div class="contact-item">
+    <i class="bi bi-linkedin"></i>
+    <span>LinkedIn:</span>
+    <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">linkedin.com/in/your-linkedin-profile</a>
+  </div>
+  
+  <div class="contact-item">
+    <i class="bi bi-github"></i>
+    <span>GitHub:</span>
+    <a href="https://github.com/VidhiSharma2000" target="_blank">github.com/VidhiSharma2000</a>
+  </div>
+</div>
+
+## Location
+
+Boston, Massachusetts, USA
+
+## Connect With Me
+
+I'm currently interested in opportunities related to:
+
+- Data Analysis and Business Intelligence
+- Machine Learning and Predictive Modeling
+- Business Analytics Consulting
+- Process Optimization and Automation
+
+Whether you have a specific project in mind or just want to say hello, I'd love to hear from you!
+
+<style>
+.contact-info {
+  margin: 2rem 0;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item i {
+  margin-right: 1rem;
+  color: var(--teal);
+  font-size: 1.5rem;
+}
+
+.contact-item span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+</style>
