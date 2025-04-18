@@ -1,7 +1,76 @@
 ---
-title: "my-portfolio"
+title: "Vidhi A. Sharma"
+subtitle: "Business Analytics Student and Professional"
+page-layout: full
 ---
 
-This is a Quarto website.
+# About Me
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {.content-block}
+I'm Vidhi A. Sharma, a Master's student in <span class="highlight">Applied Business Analytics</span> at Boston University with a background in computer science and hands-on experience in analytics, operations, and business strategy. I enjoy streamlining processes, designing data solutions, and making sense of complex problems with a mix of logic, clarity, and curiosity.
+
+From automating reports and building dashboards to analyzing trends and improving workflows, I bring both structure and energy to the table. I'm comfortable translating between technical teams and business stakeholders, and I take pride in making things work better and look easier than they are.
+:::
+
+::: {.skills-container}
+::: {.skill-card}
+### Data Analytics
+
+Proficient in SQL, Python, R, and data visualization tools. Experience with statistical analysis, machine learning, and predictive modeling to extract actionable insights from complex datasets.
+
+<span class="badge">SQL</span>
+<span class="badge">Python</span>
+<span class="badge">R</span>
+<span class="badge">Tableau</span>
+:::
+
+::: {.skill-card}
+### Database & Process Management
+
+Skilled in database design, ETL processes, and workflow optimization. Experience in streamlining business operations through data-driven approaches and process automation.
+
+<span class="badge badge-secondary">ETL</span>
+<span class="badge badge-secondary">Database Design</span>
+<span class="badge badge-secondary">Process Optimization</span>
+:::
+
+::: {.skill-card}
+### Technical Development
+
+Knowledge of full-stack development principles with experience in creating data-driven applications and dashboards. Comfortable with version control systems and agile methodologies.
+
+<span class="badge badge-tertiary">Web Development</span>
+<span class="badge badge-tertiary">Git</span>
+<span class="badge badge-tertiary">Agile</span>
+:::
+:::
+
+## Education
+
+::: {.content-block}
+**Boston University**  
+Master of Science in Applied Business Analytics  
+2023 - Present
+
+**Mumbai University**  
+Bachelor of Engineering in Computer Science  
+2018 - 2022
+:::
+
+## Professional Experience
+
+::: {.content-block}
+**Data Analytics Intern | TechSolutions Inc.**  
+June 2023 - August 2023
+
+- Analyzed customer data to identify patterns and trends that increased retention by 15%
+- Developed automated reporting dashboards using Power BI that reduced reporting time by 60%
+- Collaborated with cross-functional teams to implement data-driven solutions
+
+**Junior Business Analyst | InnovateTech**  
+January 2022 - May 2023
+
+- Performed data analysis to support business decision-making processes
+- Assisted in designing and implementing database solutions for improved data management
+- Created regular reports and presentations for executive leadership
+:::
