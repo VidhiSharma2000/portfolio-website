@@ -12,6 +12,10 @@ I'm Vidhi A. Sharma, a Master's student in <span class="highlight">Applied Busin
 From automating reports and building dashboards to analyzing trends and improving workflows, I bring both structure and energy to the table. I'm comfortable translating between technical teams and business stakeholders, and I take pride in making things work better and look easier than they are.
 :::
 
+::: {.section-bg}
+## My Expertise
+:::
+
 ::: {.skills-container}
 ::: {.skill-card}
 ### Data Analytics
@@ -45,7 +49,9 @@ Knowledge of full-stack development principles with experience in creating data-
 :::
 :::
 
+::: {.section-bg}
 ## Education
+:::
 
 ::: {.content-block}
 **Boston University**  
@@ -57,20 +63,27 @@ Bachelor of Engineering in Computer Science
 2018 - 2022
 :::
 
+::: {.section-bg}
 ## Professional Experience
+:::
 
 ::: {.content-block}
 **Data Analytics Intern | TechSolutions Inc.**  
-June 2023 - August 2023
+<span class="experience-date">June 2023 - August 2023</span>
 
 - Analyzed customer data to identify patterns and trends that increased retention by 15%
 - Developed automated reporting dashboards using Power BI that reduced reporting time by 60%
 - Collaborated with cross-functional teams to implement data-driven solutions
 
 **Junior Business Analyst | InnovateTech**  
-January 2022 - May 2023
+<span class="experience-date">January 2022 - May 2023</span>
 
 - Performed data analysis to support business decision-making processes
 - Assisted in designing and implementing database solutions for improved data management
 - Created regular reports and presentations for executive leadership
 :::
+
+<hr>
+
+<blockquote>
+"I believe in translating complex data into clear, actionable insights that drive business dec

@@ -5,8 +5,8 @@ project:
 website:
   title: "Vidhi A. Sharma"
   navbar:
-    background: "#444444"  # Dark grey background
-    foreground: "#ffffff"  # White text for navigation items
+    background: "#3A4B43"  # Charcoal Green
+    foreground: "#F9F9F6"  # Soft Bone (white text)
     left:
       - href: index.qmd
         text: About
