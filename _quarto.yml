@@ -1,24 +1,22 @@
 project:
   type: website
-  output-dir: _site
 
 website:
   title: "Vidhi A. Sharma"
   navbar:
-    background: "#3A4B43"  # Charcoal Green
-    foreground: "#F9F9F6"  # Soft Bone (white text)
     left:
-      - href: index.qmd
-        text: About
-      - href: projects.qmd
-        text: Projects
-      - href: experience.qmd
-        text: Experience
-      - href: contact.qmd
-        text: Contact
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Projects"
+        href: projects.qmd
+  page-footer:
+    center: "© 2025 Vidhi A. Sharma"
 
 format:
   html:
-    theme: default
+    theme:
+      light: flatly
     css: styles.css
     toc: true

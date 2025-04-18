@@ -1,5 +1,40 @@
 ---
-title: "About"
+title: "About Me"
+image: images/profile.jpg
+about:
+  template: trestles
+  image-width: 180px
+  image-shape: rounded
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/vidhi-sharma
+    - icon: github
+      text: GitHub
+      href: https://github.com/vidhi-sharma
 ---
 
-About this site
+Hi, I'm **Vidhi A. Sharma** — a data-driven business analyst and current Master’s student in Applied Business Analytics at Boston University. With a background in Computer Science, I specialize in transforming complex data into clear, actionable strategies that help businesses work smarter.
+
+I translate data into stories — ones that drive decisions, boost efficiency, and uncover opportunities. Whether it's cleaning messy datasets, analyzing trends, or building dashboards that even your least tech-savvy manager can navigate, I focus on **making insights accessible**.
+
+My toolkit includes Python, SQL, Tableau, Power BI, and cloud tools like AWS and Azure. But what sets me apart is my ability to blend **technical depth** with **business clarity** — turning complex models into solutions that actually work in the real world.
+
+---
+
+## Volunteering & Impact
+
+- **Youth Empowerment Foundation**  
+  Mentored underprivileged students and assisted in educational drives aimed at bridging learning gaps.
+
+- **Help Social Welfare Society**  
+  Contributed to community development efforts through outreach, event organization, and social aid campaigns.
+
+- **Sahaas for Animals**  
+  Regular volunteer at a local animal shelter; supported daily care, cleanliness, adoption events, and fundraising initiatives.
+
+---
+
+## Let's Collaborate
+
+Whether you're a business leader looking to understand your customers better, or a team struggling to make sense of your data — I can help. Let’s turn your questions into dashboards, and your hunches into measurable results.
